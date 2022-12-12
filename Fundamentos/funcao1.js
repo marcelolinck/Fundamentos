@@ -19,4 +19,7 @@ function soma(a, b=0){
 }
 
 console.log(soma(2,4))
-console.log(2)
+console.log(soma(2))
+
+console.log(soma())
+
