@@ -2,7 +2,10 @@ function pessoa(){
     this.idade = 0
 
     /*
-    Ou pode se utilizar o self para isto recebendo o this*/
+    Ou pode se utilizar o self para isto recebendo o this. 
+    Esta é uma adaptação para que o this fica amarrado como uma
+    constante. Por isso não importará quem chamará o this.
+    */
     const self = this
     setInterval(function(){
         self.idade++
@@ -18,7 +21,7 @@ function pessoa(){
 //  o contexto aplicado com 'this' seja em cima desta 
 //  função.
         
-    .bind(this)
+    go.bind(this)
     , 1000)*/
 }
 
